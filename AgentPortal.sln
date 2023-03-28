@@ -1,0 +1,142 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{26D42C51-B9AF-497A-B8E8-0A8EA415F6E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{93A0B144-FDFC-4C48-8838-B4658DF4A168}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{FD8FDAE8-9940-432E-B4B7-435D04207BD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{86E775C8-725A-4E7E-B9ED-A10520370897}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intelli.AgentPortal.EventBus.RabbitMQ", "Intelli.AgentPortal.EventBus.RabbitMQ\Intelli.AgentPortal.EventBus.RabbitMQ.csproj", "{2ACC4515-69F7-47B9-B578-A170CF028E50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intelli.AgentPortal.Domain", "Intelli.AgentPortal.Domain\Intelli.AgentPortal.Domain.csproj", "{69CCB0EE-1AFF-43F1-9DD3-E75F6062372C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationServer", "Intelli.AgentPortal.Api\ApplicationServer.csproj", "{847281E4-963F-47E9-9452-342DBFD4111D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intelli.AgentPortal.Shared.Mvc", "Intelli.AgentPortal.Shared.Mvc\Intelli.AgentPortal.Shared.Mvc.csproj", "{0466A046-A3F5-42BF-BEBB-24F14817BF96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intelli.AgentPortal.Shared", "Intelli.AgentPortal.Dto\Intelli.AgentPortal.Shared.csproj", "{DDD7866C-57C6-40B9-8C50-1F3F1068E80D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EFC4D6D4-702D-4C83-9F61-4F480EB602A8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{3C71F952-846D-4A73-B04E-E8119A1CECBF}"
+	ProjectSection(SolutionItems) = preProject
+		Migrations\000000000000_Initial_Setup.sql = Migrations\000000000000_Initial_Setup.sql
+		Migrations\202109071611_MigrationsTable.sql = Migrations\202109071611_MigrationsTable.sql
+		Migrations\202109101300_IdentityInRolesTable.sql = Migrations\202109101300_IdentityInRolesTable.sql
+		Migrations\20210912140558_ChangedUserCompanyRelation.sql = Migrations\20210912140558_ChangedUserCompanyRelation.sql
+		Migrations\20210913125000_SeedScreens.sql = Migrations\20210913125000_SeedScreens.sql
+		Migrations\20210913131300_SeedScreenElements.sql = Migrations\20210913131300_SeedScreenElements.sql
+		Migrations\20210922094548_ChangeResourceLanguagesToUserPreference.sql = Migrations\20210922094548_ChangeResourceLanguagesToUserPreference.sql
+		Migrations\20210922130537_CreateForeignKeyInUserPreferences.sql = Migrations\20210922130537_CreateForeignKeyInUserPreferences.sql
+		Migrations\20210922195415_AddPasswordHistoryTable.sql = Migrations\20210922195415_AddPasswordHistoryTable.sql
+		Migrations\20210923130725_RemoveJmbgColumn.sql = Migrations\20210923130725_RemoveJmbgColumn.sql
+		Migrations\20210927121900_Seed_Screen_Data.sql = Migrations\20210927121900_Seed_Screen_Data.sql
+		Migrations\20210927121900_Seed_Super_Admin.sql = Migrations\20210927121900_Seed_Super_Admin.sql
+		Migrations\20210928013400_Add_User_Per_Company.sql = Migrations\20210928013400_Add_User_Per_Company.sql
+		Migrations\20210928130400_ChangeCompanyName.sql = Migrations\20210928130400_ChangeCompanyName.sql
+		Migrations\20210929131900_Seed_Screen_Data.sql = Migrations\20210929131900_Seed_Screen_Data.sql
+		Migrations\20211005120900_Add_Column_Constraint.sql = Migrations\20211005120900_Add_Column_Constraint.sql
+		Migrations\20211005200700_Seed_Menu_And_Elements.sql = Migrations\20211005200700_Seed_Menu_And_Elements.sql
+		Migrations\20211006124946_Added_Configuration_Model.sql = Migrations\20211006124946_Added_Configuration_Model.sql
+		Migrations\20211006170800_Seed_Configuration_Screen.sql = Migrations\20211006170800_Seed_Configuration_Screen.sql
+		Migrations\20211006191500_Seed_Configuration_Elements.sql = Migrations\20211006191500_Seed_Configuration_Elements.sql
+		Migrations\20211007175230_AddUserSessionModel.sql = Migrations\20211007175230_AddUserSessionModel.sql
+		Migrations\20211008221300_Seed_Screen_Data.sql = Migrations\20211008221300_Seed_Screen_Data.sql
+		Migrations\20211011164700_batches_per_company.sql = Migrations\20211011164700_batches_per_company.sql
+		Migrations\20211011164701_batches_per_company_update.sql = Migrations\20211011164701_batches_per_company_update.sql
+		Migrations\20211020080948_MoveUsersPerCompanyToCompanyModel.sql = Migrations\20211020080948_MoveUsersPerCompanyToCompanyModel.sql
+		Migrations\20220126123200_remove_CompanyId_and_add_User_Companies_table.sql = Migrations\20220126123200_remove_CompanyId_and_add_User_Companies_table.sql
+		Migrations\20220127073000_add_companyId_in_tables.sql = Migrations\20220127073000_add_companyId_in_tables.sql
+		Migrations\20220128124300_Seed_CompanySelect_element_in_Elements.sql = Migrations\20220128124300_Seed_CompanySelect_element_in_Elements.sql
+		Migrations\20220201122400_add_priority_column_in_the_system_role_table.sql = Migrations\20220201122400_add_priority_column_in_the_system_role_table.sql
+		Migrations\20220202104600_Seed_Pirority_in_Element.sql = Migrations\20220202104600_Seed_Pirority_in_Element.sql
+		Migrations\20220210111800_add_agenportalLogs_database.sql = Migrations\20220210111800_add_agenportalLogs_database.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Audit", "Audit", "{976860E8-4AE0-4F6A-A60C-64E93005E95D}"
+	ProjectSection(SolutionItems) = preProject
+		Migrations\Audit\00000000000000_AuditDbSetup.sql = Migrations\Audit\00000000000000_AuditDbSetup.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intelli.AgentPortal.Shared.Services", "Intelli.AgentPortal.Shared.Services\Intelli.AgentPortal.Shared.Services.csproj", "{B04E1366-841D-4F74-9833-761E59D90F7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationServer", "ApplicationServer", "{B757D6B0-4326-4BAF-AC7F-62566FC0130B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AgentPortal", "AgentPortal", "{B1847A68-B265-48DA-B27C-BB65E15728BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgentPortal", "..\..\AgentPortal_UI\AgentPortal_UI\AgentPortal\AgentPortal.csproj", "{6C4ED22F-ACBF-473D-9F46-ACD104F0F4B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intelli.PortalServices", "..\..\AgentPortal_UI\AgentPortal_UI\Intelli.PortalServices\Intelli.PortalServices.csproj", "{AE428AC0-8DEF-4879-A94A-7371DB0D51AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ACC4515-69F7-47B9-B578-A170CF028E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACC4515-69F7-47B9-B578-A170CF028E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACC4515-69F7-47B9-B578-A170CF028E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACC4515-69F7-47B9-B578-A170CF028E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69CCB0EE-1AFF-43F1-9DD3-E75F6062372C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69CCB0EE-1AFF-43F1-9DD3-E75F6062372C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69CCB0EE-1AFF-43F1-9DD3-E75F6062372C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69CCB0EE-1AFF-43F1-9DD3-E75F6062372C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847281E4-963F-47E9-9452-342DBFD4111D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847281E4-963F-47E9-9452-342DBFD4111D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847281E4-963F-47E9-9452-342DBFD4111D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847281E4-963F-47E9-9452-342DBFD4111D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0466A046-A3F5-42BF-BEBB-24F14817BF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0466A046-A3F5-42BF-BEBB-24F14817BF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0466A046-A3F5-42BF-BEBB-24F14817BF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0466A046-A3F5-42BF-BEBB-24F14817BF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD7866C-57C6-40B9-8C50-1F3F1068E80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD7866C-57C6-40B9-8C50-1F3F1068E80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD7866C-57C6-40B9-8C50-1F3F1068E80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD7866C-57C6-40B9-8C50-1F3F1068E80D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04E1366-841D-4F74-9833-761E59D90F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04E1366-841D-4F74-9833-761E59D90F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04E1366-841D-4F74-9833-761E59D90F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04E1366-841D-4F74-9833-761E59D90F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4ED22F-ACBF-473D-9F46-ACD104F0F4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4ED22F-ACBF-473D-9F46-ACD104F0F4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4ED22F-ACBF-473D-9F46-ACD104F0F4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4ED22F-ACBF-473D-9F46-ACD104F0F4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE428AC0-8DEF-4879-A94A-7371DB0D51AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE428AC0-8DEF-4879-A94A-7371DB0D51AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE428AC0-8DEF-4879-A94A-7371DB0D51AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE428AC0-8DEF-4879-A94A-7371DB0D51AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26D42C51-B9AF-497A-B8E8-0A8EA415F6E3} = {B757D6B0-4326-4BAF-AC7F-62566FC0130B}
+		{93A0B144-FDFC-4C48-8838-B4658DF4A168} = {B757D6B0-4326-4BAF-AC7F-62566FC0130B}
+		{FD8FDAE8-9940-432E-B4B7-435D04207BD5} = {B757D6B0-4326-4BAF-AC7F-62566FC0130B}
+		{86E775C8-725A-4E7E-B9ED-A10520370897} = {B757D6B0-4326-4BAF-AC7F-62566FC0130B}
+		{2ACC4515-69F7-47B9-B578-A170CF028E50} = {93A0B144-FDFC-4C48-8838-B4658DF4A168}
+		{69CCB0EE-1AFF-43F1-9DD3-E75F6062372C} = {26D42C51-B9AF-497A-B8E8-0A8EA415F6E3}
+		{847281E4-963F-47E9-9452-342DBFD4111D} = {86E775C8-725A-4E7E-B9ED-A10520370897}
+		{0466A046-A3F5-42BF-BEBB-24F14817BF96} = {FD8FDAE8-9940-432E-B4B7-435D04207BD5}
+		{DDD7866C-57C6-40B9-8C50-1F3F1068E80D} = {FD8FDAE8-9940-432E-B4B7-435D04207BD5}
+		{EFC4D6D4-702D-4C83-9F61-4F480EB602A8} = {B757D6B0-4326-4BAF-AC7F-62566FC0130B}
+		{3C71F952-846D-4A73-B04E-E8119A1CECBF} = {EFC4D6D4-702D-4C83-9F61-4F480EB602A8}
+		{976860E8-4AE0-4F6A-A60C-64E93005E95D} = {3C71F952-846D-4A73-B04E-E8119A1CECBF}
+		{B04E1366-841D-4F74-9833-761E59D90F7D} = {FD8FDAE8-9940-432E-B4B7-435D04207BD5}
+		{6C4ED22F-ACBF-473D-9F46-ACD104F0F4B6} = {B1847A68-B265-48DA-B27C-BB65E15728BC}
+		{AE428AC0-8DEF-4879-A94A-7371DB0D51AF} = {B1847A68-B265-48DA-B27C-BB65E15728BC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3456D497-429C-49D8-803F-2B4ABDB8BBAB}
+	EndGlobalSection
+EndGlobal
