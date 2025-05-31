@@ -47,12 +47,6 @@ While creating a table in database its primary key must be of type int with name
 
 Doing this will automatically implement IEntity interface and model can be managed using repository pattern.
 
-## Default Username & Password
-
-{
-  "email": "portaladmin@mailinator.com",
-  "password": "Admin!23"
-}
 
 ## Audit database
 
