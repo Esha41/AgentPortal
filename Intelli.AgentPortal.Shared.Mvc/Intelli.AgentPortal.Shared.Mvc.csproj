@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="5.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Intelli.AgentPortal.Domain\Intelli.AgentPortal.Domain.csproj" />
+    <ProjectReference Include="..\Intelli.AgentPortal.Dto\Intelli.AgentPortal.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

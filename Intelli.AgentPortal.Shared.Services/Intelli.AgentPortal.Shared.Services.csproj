@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Intelli.AgentPortal.Domain\Intelli.AgentPortal.Domain.csproj" />
+    <ProjectReference Include="..\Intelli.AgentPortal.Dto\Intelli.AgentPortal.Shared.csproj" />
+    <ProjectReference Include="..\Intelli.AgentPortal.Shared.Mvc\Intelli.AgentPortal.Shared.Mvc.csproj" />
+  </ItemGroup>
+
+</Project>
